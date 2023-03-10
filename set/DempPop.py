@@ -1,7 +1,7 @@
-import datetime
+import date_time__
 import random
 
-nowDate = datetime.datetime.now()
+nowDate = date_time__.datetime.now()
 
 setX = {"0"}
 

@@ -1,8 +1,8 @@
 import random
 import time
-import datetime
+import date_time__
 
-set1 = {random.random() * 100, time.time_ns(), datetime.datetime.year, datetime.datetime.month, datetime.datetime.day}
+set1 = {random.random() * 100, time.time_ns(), date_time__.datetime.year, date_time__.datetime.month, date_time__.datetime.day}
 
 
 print(f"set1:{set1}")
