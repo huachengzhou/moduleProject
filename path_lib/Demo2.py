@@ -3,9 +3,19 @@ import random
 import time
 import hashlib
 
+
+# 写文件
+
 fileName1 = str(random.randrange(100, 100000) + random.randrange(100, 100000) + random.randrange(100, 100000))
 
 paths = ('file', fileName1 + '.txt')
+
+# 判断文件夹是否存在
+if pathLib.Path(pathLib.Path.cwd().joinpath('file')).exists():
+    pass
+else:
+    #不存在则建立文件夹
+    pathLib.Path.mkdir(pathLib.Path(pathLib.Path.cwd().joinpath('file')))
 
 file1 = pathLib.Path.open(pathLib.Path.cwd().joinpath(*paths), mode="w", encoding="UTF-8")
 
@@ -17,5 +27,4 @@ for x in range(1, 100, 2):
 
 print(strList)
 file1.writelines(strList)
-
-
+file1.close()
