@@ -2,8 +2,17 @@ import os as osUtils
 import json as jsonUtils
 import pathlib as pathLib
 
+
+DIR_FILE_BASE = ""
+DIR_FILE_PAGE_JSON = ""
+DIR_FILE_PAGE_NEW_JSON = ""
+
 def writeJSONFile(DIR_FILE_BASE, DIR_FILE_PAGE_JSON, DIR_FILE_PAGE_NEW_JSON,DIR_FIRST_PATH):
     print("......")
+    print(DIR_FILE_BASE)
+    print(DIR_FILE_PAGE_JSON)
+    print(DIR_FILE_PAGE_NEW_JSON)
+    print(DIR_FIRST_PATH)
     fileList = pathLib.Path.iterdir(pathLib.Path(DIR_FILE_BASE))
     listTotal = []
 
@@ -53,14 +62,19 @@ def writeJSONFile(DIR_FILE_BASE, DIR_FILE_PAGE_JSON, DIR_FILE_PAGE_NEW_JSON,DIR_
     pass
 
 
-DIR_FILE_BASE = ""
-DIR_FILE_PAGE_JSON = ""
-DIR_FILE_PAGE_NEW_JSON = ""
+
 
 DIR_FIRST_PATH = "schedule/schedule"
 
 
 def runFun():
+
+
+    global DIR_FILE_BASE
+    global DIR_FILE_PAGE_JSON
+    global DIR_FILE_PAGE_NEW_JSON
+
+
     print("请输入json文件夹")
     DIR_FILE_BASE = input()
     print("请输入 uniapp pages.json 位置")
