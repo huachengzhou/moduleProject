@@ -1,0 +1,49 @@
+{
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "fontSize": "14",
+    "list": [
+      {
+        "pagePath": "pages/schedule/schedule",
+        "iconPath": "static/tabbar/schedule.png",
+        "selectedIconPath": "static/tabbar/schedule_select.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/backlog/backlog",
+        "iconPath": "static/tabbar/backlog.png",
+        "selectedIconPath": "static/tabbar/backlog_select.png",
+        "text": "待办"
+      },
+      {
+        "pagePath": "pages/workbench/workbench",
+        "iconPath": "static/tabbar/workbench.png",
+        "selectedIconPath": "static/tabbar/workbench_select.png",
+        "text": "工作台"
+      },
+      {
+        "pagePath": "pages/addressbook/addressbook",
+        "iconPath": "static/tabbar/addressbook.png",
+        "selectedIconPath": "static/tabbar/addressbook_select.png",
+        "text": "通信录"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine_select.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "#F4F5F6",
+    "backgroundColorBottom": "#F4F5F6"
+  }
+}
