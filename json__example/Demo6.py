@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 import os as osUtils
 import json as jsonUtils
 import pathlib as pathLib
